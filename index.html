@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandy's perfume - Perfume Order Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            <div class="logo-icon">✿</div>
+            <div>
+                <h2>Sandy's Prefume</h2>
+                <span>PREMIUM PERFUMES</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-image">
+            <img src="per.jpg" alt="Perfume">
+        </div>
+
+        <div class="hero-content">
+            <h1>Perfume Order Form</h1>
+            <p>Fill in your details below to place your order</p>
+
+            <div class="line">
+                <span></span>
+                ✿
+                <span></span>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Main Form -->
+    <main class="form-container">
+
+        <!-- Customer Details -->
+        <div class="card customer-card">
+
+            <h2><i class="fa-regular fa-user"></i> Customer Details</h2>
+
+            <div class="underline"></div>
+
+            <div class="row">
+
+                <div class="input-group">
+                    <label>Full Name <b>*</b></label>
+
+                    <div class="input-box">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" placeholder="Enter your full name">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address <b>*</b></label>
+
+                    <div class="input-box">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="input-group full">
+                <label>Phone Number <b>*</b></label>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="text" placeholder="Enter your phone number">
+                </div>
+            </div>
+
+
+            <hr>
+
+
+            <h2><i class="fa-solid fa-location-dot"></i> Delivery Address</h2>
+
+            <div class="underline"></div>
+
+
+            <div class="row">
+
+                <div class="input-group">
+                    <label>Address Line 1 <b>*</b></label>
+
+                    <div class="input-box">
+                        <input type="text" placeholder="House no., Building, Street">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Address Line 2</label>
+
+                    <div class="input-box">
+                        <input type="text" placeholder="Area, Landmark (Optional)">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="input-group">
+                    <label>City <b>*</b></label>
+
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your city">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>State <b>*</b></label>
+
+                    <div class="input-box">
+                        <select>
+                            <option>Select your state</option>
+                            <option>Tamil Nadu</option>
+                            <option>Kerala</option>
+                            <option>Karnataka</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Pincode <b>*</b></label>
+
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter pincode">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Order Details -->
+        <div class="card order-card">
+
+            <h2><i class="fa-solid fa-bag-shopping"></i> Order Details</h2>
+
+            <div class="underline"></div>
+
+
+            <div class="input-group full">
+                <label>Select Perfume <b>*</b></label>
+
+                <div class="input-box">
+                    <select>
+                        <option>Choose your perfume</option>
+                        <option>Rose Bloom</option>
+                        <option>Royal Oud</option>
+                        <option>Vanilla Dream</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <label class="section-label">Bottle Size <b>*</b></label>
+
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="size"> 30 ml
+                </label>
+
+                <label>
+                    <input type="radio" name="size"> 50 ml
+                </label>
+
+                <label>
+                    <input type="radio" name="size"> 100 ml
+                </label>
+            </div>
+
+
+            <label class="section-label">Quantity <b>*</b></label>
+
+            <div class="quantity-price">
+
+                <div class="quantity">
+                    <button>−</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+
+                <div class="price">
+                    <small>Price</small>
+                    <strong>₹0.00</strong>
+                </div>
+
+            </div>
+
+
+            <hr>
+
+
+            <h2><i class="fa-regular fa-credit-card"></i> Payment Method</h2>
+
+            <div class="underline"></div>
+
+
+            <div class="payment">
+
+                <label>
+                    <input type="radio" name="payment"> UPI
+                </label>
+
+                <label>
+                    <input type="radio" name="payment"> Credit / Debit Card
+                </label>
+
+                <label>
+                    <input type="radio" name="payment"> Cash on Delivery (COD)
+                </label>
+
+                <label>
+                    <input type="radio" name="payment"> Net Banking
+                </label>
+
+            </div>
+
+
+            <button class="order-btn">
+                <i class="fa-solid fa-bag-shopping"></i>
+                PLACE ORDER
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- Features -->
+    <section class="features">
+
+        <div class="feature">
+            <i class="fa-regular fa-shield"></i>
+
+            <div>
+                <h3>100% Original</h3>
+                <p>We sell only original perfumes</p>
+            </div>
+        </div>
+
+
+        <div class="feature">
+            <i class="fa-solid fa-truck"></i>
+
+            <div>
+                <h3>Free Delivery</h3>
+                <p>Free shipping on orders above ₹999</p>
+            </div>
+        </div>
+
+
+        <div class="feature">
+            <i class="fa-regular fa-face-smile"></i>
+
+            <div>
+                <h3>Easy Returns</h3>
+                <p>7 days easy return policy</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            <h2>✿ Sandy's</h2>
+            <span>PREMIUM PERFUMES</span>
+
+            <p>
+                Discover your signature scent from our wide
+                range of premium perfumes.
+            </p>
+
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+
+
+        <div class="footer-column">
+            <h4>QUICK LINKS</h4>
+            <p>Home</p>
+            <p>Shop</p>
+            <p>Collections</p>
+            <p>About Us</p>
+        </div>
+
+
+        <div class="footer-column">
+            <h4>CUSTOMER SERVICE</h4>
+            <p>Contact Us</p>
+            <p>Shipping Policy</p>
+            <p>Return Policy</p>
+            <p>FAQs</p>
+        </div>
+
+
+        <div class="footer-column">
+            <h4>CONTACT US</h4>
+            <p>☎ +91 9384007890</p>
+            <p>✉ support@sandy's perfume@mail.com</p>
+            <p>📍 123, thousand light street<br>
+                Chennai, Tamil Nadu - 600001
+            </p>
+        </div>
+
+        <div class="copyright">
+            © 2026 Sandy's perfume. All Rights Reserved.
+        </div>
+
+    </footer>
+
+</body>
+</html>
